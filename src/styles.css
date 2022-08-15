@@ -1,0 +1,29 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.submit {
+  background-color: #256d85;
+  color: white;
+  padding: 1% 2% 1% 2%;
+  margin: 4%;
+}
+.submit::hover {
+  color: black;
+}
+
+.signup {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+.styleLoginInputs {
+  font-family: "Lato", sans-serif;
+  margin: 10px;
+  text-align: center;
+}
+/* .carousel {
+  width: 1600px;
+  height: 600px;
+} */
+.navBarMyStyle {
+}
