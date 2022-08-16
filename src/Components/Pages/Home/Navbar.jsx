@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function NavBar() {
   return (
       <div>
-        <nav className="navbar navbar-lg navbar-expand-lg bg-lg">
-          <div className="container-fluid d-flex justify-content-end ">
-            <Link className="navbar-brand" to="/">
+        <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
+          <div className="container-fluid d-flex flex-row-reverse">
+            <Link className="navbar-brand " to="/">
               Home
             </Link>
             <button
