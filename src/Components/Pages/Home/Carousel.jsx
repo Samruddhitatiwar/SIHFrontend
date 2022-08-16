@@ -1,6 +1,7 @@
 import React from "react";
-import Image1 from "./Image1.png";
-import Image2 from "./Image2.png";
+import Image2 from "./5.png";
+import Image1 from "./1.png";
+import Image3 from "./4.png";
 function Carousel() {
   return (
     <div>
@@ -51,7 +52,7 @@ function Carousel() {
             </div>
           </div>
           <div className="carousel-item">
-            <img src={Image2} className="d-block w-100" alt="..." />
+            <img src={Image3} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>
