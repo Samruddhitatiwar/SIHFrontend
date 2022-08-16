@@ -1,9 +1,8 @@
 import React from "react";
+import Scrollpy from "./Scrollpy";
 function Schemes() {
   return (
-    <div>
-      <h1>you are in Schemes</h1>
-    </div>
+    <div><Scrollpy/></div>
   );
 }
 export default Schemes;

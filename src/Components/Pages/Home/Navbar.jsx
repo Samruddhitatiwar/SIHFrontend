@@ -4,13 +4,13 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function NavBar() {
   return (
       <div>
-        <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
-          <div className="container-fluid">
+        <nav className="navbar navbar-lg navbar-expand-lg bg-lg">
+          <div className="container-fluid d-flex justify-content-end ">
             <Link className="navbar-brand" to="/">
               Home
             </Link>
             <button
-              className="navbar-toggler"
+              className="navbar-toggler float-end"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -25,7 +25,8 @@ function NavBar() {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              
                 <li className="nav-item">
                   <Link className="nav-link " aria-current="page" to="/schemes">
                     Schemes
@@ -84,12 +85,10 @@ function NavBar() {
                 </li>
               </ul>
               <li>
-                <button>
-                  <Link to="/login">Login</Link>
+                <button type="button" class="btn btn-dark">
+                  <Link className="LoginLink" to="/login">Login</Link>
                 </button>
-                <button>
-                  <Link to="/signup">Signup</Link>
-                </button>
+                
               </li>
             </div>
           </div>

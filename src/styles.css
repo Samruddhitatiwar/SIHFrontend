@@ -27,5 +27,17 @@
   width: 1600px;
   height: 600px;
 } */
-.navBarMyStyle {
+.LoginLink{
+  color: white;
+  text-decoration: none;
+}
+.Logo{
+  height: 70px;
+  width: 70px;
+}
+.scrollpy{
+  width: 25%;
+  float: left;
+  height: 5%;
+
 }

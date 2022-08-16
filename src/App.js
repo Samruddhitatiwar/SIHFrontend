@@ -9,6 +9,8 @@ import Schemes from "./Components/Pages/Schemes/Schemes.jsx";
 import NavBar from "./Components/Pages/Home/Navbar.jsx";
 import Register from "./Components/Pages/Register/LinearStepper.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Announcements from './Components/Pages/Home/Announcements';
+
 export default function App() {
   return (
     <div>
@@ -27,7 +29,7 @@ export default function App() {
           </Routes>
 
           
-          {/* <Login/> */}
+        
 
 
 
