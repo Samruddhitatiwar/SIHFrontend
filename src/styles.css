@@ -90,3 +90,26 @@
 .vmove:hover {
   animation-play-state: paused;
 }
+/* counter styles */
+
+.counter-bg{
+    /* background-color: blueviolet; */
+    text-align: center;
+    padding-left: 35%;
+}
+.up{
+  padding: 20px;
+  color: white;
+  border-radius: 20px;
+  margin-right: 30px;
+  margin-left: 0px;
+  background-color: #1F4690;
+}
+.down{
+  padding: 20px;
+  color: white;
+  border-radius: 20px;
+  background-color: #1F4690;
+}
+
+

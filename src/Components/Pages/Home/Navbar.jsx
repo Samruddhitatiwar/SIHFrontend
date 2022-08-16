@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+import PersonIcon from '@mui/icons-material/Person';
+// import Logo from "./Home/GuruRec.png";
 function NavBar() {
   return (
       <div>
@@ -26,7 +27,6 @@ function NavBar() {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              
                 <li className="nav-item">
                   <Link className="nav-link " aria-current="page" to="/schemes">
                     Schemes
@@ -85,10 +85,10 @@ function NavBar() {
                 </li>
               </ul>
               <li>
-                <button type="button" class="btn btn-dark">
-                  <Link className="LoginLink" to="/login">Login</Link>
-                </button>
-                
+                {/* <button type="button" class="btn btn-dark">
+                  <Link className="LoginLink" to="/login"><PersonIcon/></Link>
+                </button> */}
+                <Link className="LoginLink" to="/login"><PersonIcon/></Link>
               </li>
             </div>
           </div>

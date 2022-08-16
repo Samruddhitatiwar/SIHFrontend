@@ -8,10 +8,10 @@ function Carousel() {
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={Image1} className="d-block w-100" alt="..." />
+      <img src={Image2} className="d-block w-100" alt="..." />
     </div>
     <div className="carousel-item">
-      <img src={Image2} className="d-block w-100" alt="..." />
+      <img src={Image1} className="d-block w-100" alt="..." />
     </div>
     <div className="carousel-item">
       <img src={Image3} className="d-block w-100" alt="..." />
