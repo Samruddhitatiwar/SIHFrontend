@@ -1,5 +1,7 @@
+/* font-family: 'Merriweather Sans', sans-serif; text
+font-family: 'Open Sans', sans-serif; heading*/ 
 .App {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -41,55 +43,7 @@
   height: 5%;
 
 }
-.vwrap,
-.vitem {
-  height: 30px;
-  line-height: 30px;
-}
 
-/* (B) FIXED WRAPPER */
-.vwrap {
-  overflow: hidden; /* HIDE SCROLL BAR */
-  background: rgb(4, 4, 4);
-}
-
-/* (C) TICKER ITEMS */
-.vitem {
-  text-align: center;
-  color: white;
-}
-
-/* (D) ANIMATION - MOVE ITEMS FROM TOP TO BOTTOM */
-/* CHANGE KEYFRAMES IF YOU ADD/REMOVE ITEMS */
-.vmove {
-  position: relative;
-}
-@keyframes tickerv {
-  0% {
-    bottom: 0;
-  } /* FIRST ITEM */
-  30% {
-    bottom: 30px;
-  } /* SECOND ITEM */
-  60% {
-    bottom: 60px;
-  } /* THIRD ITEM */
-  90% {
-    bottom: 90px;
-  } /* FORTH ITEM */
-  100% {
-    bottom: 0;
-  } /* BACK TO FIRST */
-}
-.vmove {
-  animation-name: tickerv;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(1, 0, 0.5, 0);
-}
-.vmove:hover {
-  animation-play-state: paused;
-}
 /* counter styles */
 
 .counter-bg{
@@ -111,5 +65,19 @@
   border-radius: 20px;
   background-color: #1F4690;
 }
+/* Styling the announcements */
+.announcements{
+  padding: 5px;
+  background-color:#06283D;
+  color: white;
 
+  font-family: 'Merriweather Sans', sans-serif;
+}
+#grad1{
+  background-image: linear-gradient(black, #06283D);
+}
 
+.LogoHome{
+  height: 5px;
+  width: 5px;
+}

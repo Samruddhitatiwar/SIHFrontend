@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PersonIcon from '@mui/icons-material/Person';
-// import Logo from "./Home/GuruRec.png";
+import Logo from "./GuruRec.png";
 function NavBar() {
   return (
-      <div>
-        <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
-          <div className="container-fluid d-flex flex-row-reverse">
+      <div >
+        <nav className="navbar navbar-dark navbar-expand-lg bg-dark" id="grad1">
+          <div className="container-fluid ">
             <Link className="navbar-brand " to="/">
               Home
             </Link>
