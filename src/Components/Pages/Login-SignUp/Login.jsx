@@ -26,7 +26,7 @@ function Login() {
         </button>
       </div>
       <br />
-      <Link to="/SignUp"> Already have an account? Sign in</Link>
+      <Link to="/SignUp"> SignUp</Link>
     </div>
   );
 }
