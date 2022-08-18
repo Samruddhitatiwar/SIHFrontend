@@ -30,9 +30,11 @@ font-family: 'Open Sans', sans-serif; heading*/
   height: 600px;
 } */
 .LoginLink{
-  color: white;
+  color: rgba(255, 255, 255, 0.575);
   text-decoration: none;
+  margin:12px ;
 }
+
 .Logo{
   height: 70px;
   width: 70px;
@@ -49,7 +51,8 @@ font-family: 'Open Sans', sans-serif; heading*/
 .counter-bg{
     /* background-color: blueviolet; */
     text-align: center;
-    padding-left: 35%;
+    margin: 5% 25% 5% 25%; 
+    
 }
 .up{
   padding: 20px;
@@ -57,13 +60,13 @@ font-family: 'Open Sans', sans-serif; heading*/
   border-radius: 20px;
   margin-right: 30px;
   margin-left: 0px;
-  background-color: #1F4690;
+  background-color: #06283D;
 }
 .down{
   padding: 20px;
   color: white;
   border-radius: 20px;
-  background-color: #1F4690;
+  background-color: #06283D;
 }
 /* Styling the announcements */
 .announcements{
@@ -83,15 +86,43 @@ font-family: 'Open Sans', sans-serif; heading*/
 }
 /* footer and stepper styles */
 .footer{
-  background-color: #0F044C;
+  background-color: #06283D;
   color: white;
+  padding-top: 30px;
 }
 .follow-box p {
   font-family: montserratlight;
   margin: 40px 0 0 0;
   color: #fff;
   font-size: 14px;
+  
 }
 li {
   list-style-type : none;
+}
+
+/* style of step cards */
+.outer {
+  
+  display: flex;
+  align-items: stretch;
+  padding: 25px;
+  background-color: #dff6ff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.step {
+  flex: 1;
+  display: flex;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.steps-image {
+  height: 100%;
+  width: 100%;
+}
+.icon {
+  align-items: center;
+  margin-top: 12%;
 }

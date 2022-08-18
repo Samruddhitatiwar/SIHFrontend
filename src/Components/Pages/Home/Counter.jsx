@@ -5,8 +5,8 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 function counter(props) {
   return (
-    <div className="counter-bg">
-      <table>
+    
+      <table className="counter-bg">
         <tr>
           <td>
             <div className="up">
@@ -24,7 +24,7 @@ function counter(props) {
           </td>
         </tr>
       </table>
-    </div>
+   
   );
 }
 export default counter;
