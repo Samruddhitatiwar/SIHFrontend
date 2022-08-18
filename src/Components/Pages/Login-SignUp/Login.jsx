@@ -1,28 +1,35 @@
 import React from "react";
-import {Link} from "react-router-dom";
-const Login=()=> {
-  
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+function Login() {
   return (
-    <div>
-      <h5 className="styleLoginInputs">Email</h5>
-      <input
-        type="email"
-        placeholder="Enter your email"
-        
-        required
-        id="email"
-      ></input>
+    <div className="Logintotal">
+      <AccountBoxIcon className="Loginicon" />
+      <div className="Loginheading">Login In</div>
+      <div className="LogininputField">
+        <input
+          className="Logininput"
+          type="email"
+          placeholder="Enter your email*"
+        />
+      </div>
+      <div className="LogininputField">
+        <input
+          className="Logininput"
+          type="email"
+          placeholder="Enter your password*"
+        />
+      </div>
+      <div>
+        <button className="Loginbutton" type="button">
+        <Link className="LoginLink" to="/LinaerStepper"> Login</Link>
+        </button>
+      </div>
       <br />
-      <h5 className="styleLoginInputs">Password</h5>
-      <input type="password" placeholder="Password" required></input>
-      <br />
-      <button>
-        <Link to="/register">Login</Link>
-      </button>
-      <h5>
-        Do you want to create an account?<Link to="/signup">SignUp</Link>
-      </h5>
+      <Link to="/SignUp"> Already have an account? Sign in</Link>
     </div>
   );
-};
+}
+
 export default Login;
+

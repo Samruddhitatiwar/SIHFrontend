@@ -1,32 +1,33 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import PersonAddIcon from "@mui/icons-material/PersonAdd";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function SignUp() {
   return (
-    <div className="signup">
-      <h3>Sign Up</h3>
-      <h5>Name</h5>
-      <input type="text"></input>
+    <div className="Logintotal">
+      <PersonAddIcon className="Loginicon" />
+      <div className="Loginheading">Sign Up</div>
 
-      <h5> Date of Birth </h5>
-      <input type="date"></input>
-
-      <h5>Email adress </h5>
-      <input type="email"></input>
-
-      <h5>Create new Password </h5>
-      <input type="password" required></input>
-
-      <h5>Confirm Password </h5>
-      <input type="password" id="myInput" required></input>
-      {/* <input type="checkbox" onclick={myFunction()}>
-        Show Password
-      </input> */}
+      <div className="LogininputField">
+        <input  className="Logininput" type="text" placeholder="First Name*" />
+      </div>
+      <div className="LogininputField">
+        <input  className="Logininput" type="text" placeholder="Last Name*" />
+      </div>
+      <div className="LogininputField">
+        <input  className="Logininput" type="email" placeholder="Email Address*" />
+      </div>
+      <div className="LogininputField">
+        <input className="Logininput"  type="password" placeholder="Password*" />
+      </div>
+      <div >
+        <button  className="Loginbutton" type="button">
+        <Link className="LoginLink" to="/Login"> Sign Up</Link>
+        </button>
+      </div>
       <br />
-      <button className="submit">
-        <Link to="/login">SignUp</Link>
-      </button>
+      <Link to="/Login"> Already have an account? Sign in</Link>
     </div>
   );
 }
-
 export default SignUp;
+
