@@ -7,7 +7,7 @@ import Initiatives from "./Components/Pages/Initiatives/Initiatives.jsx";
 import NewsRoom from "./Components/Pages/NewsRoom/NewsRoom.jsx";
 import Schemes from "./Components/Pages/Schemes/Schemes.jsx";
 import NavBar from "./Components/Pages/Home/Navbar.jsx";
-import Register from "./Components/Pages/Register/LinearStepper.jsx";
+import LinearStepper from "./Components/Pages/Register/LinearStepper.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -24,7 +24,7 @@ export default function App() {
             <Route exact path="/initiatives" element={<Initiatives />} />
             <Route exact path="/newsroom" element={<NewsRoom />} />
             <Route exact path="/schemes" element={<Schemes />} />
-
+            <Route exact path="/register" element={<LinearStepper/>}/>
           </Routes>
 
           
@@ -32,8 +32,6 @@ export default function App() {
 
 
 
-
-          {/* <Register/> */}
 
         </div>
       </Router >

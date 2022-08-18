@@ -17,7 +17,7 @@ const Login=()=> {
       <input type="password" placeholder="Password" required></input>
       <br />
       <button>
-        <Link to="/">Login</Link>
+        <Link to="/register">Login</Link>
       </button>
       <h5>
         Do you want to create an account?<Link to="/signup">SignUp</Link>

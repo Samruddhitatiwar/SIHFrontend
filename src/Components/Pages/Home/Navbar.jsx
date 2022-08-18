@@ -5,7 +5,7 @@ import Logo from "./GuruRec.png";
 function NavBar() {
   return (
     <div>
-      <nav className="navbar navbar-dark navbar-expand-lg bg-dark" id="grad1">
+      <nav className="navbar navbar-dark navbar-expand-lg bg-dark navbar-fixed-top" id="grad1">
         <div className="container-fluid ">
           <Link className="navbar-brand " to="/">
             Home
