@@ -22,7 +22,7 @@ function Login() {
       </div>
       <div>
         <button className="Loginbutton" type="button">
-        <Link className="LoginLink" to="/LinaerStepper"> Login</Link>
+        <Link className="LoginLink" to="/choice"> Login</Link>
         </button>
       </div>
       <br />

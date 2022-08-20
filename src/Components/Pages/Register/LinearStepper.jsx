@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import SaveIcon from '@mui/icons-material/Save';
+import AddInput from "./AddInput";
+import AddInput2 from "./AddInput2";
 import {
   Typography,
   TextField,
@@ -36,19 +39,19 @@ function getStepContent(step) {
             required
             id="first-name"
             label="First Name"
-            variant="outlined"
+            variant="filled"
             placeholder="Enter Your First Name"
-            fullWidth
+            
             margin="normal"
             name="firstName"
-          />
+          />{" \n"}
           <TextField
             required
             id="last-name"
             label="Last Name"
-            variant="outlined"
+            variant="filled"
             placeholder="Enter Your Last Name"
-            fullWidth
+            
             margin="normal"
             name="lastName"
           />
@@ -62,16 +65,7 @@ function getStepContent(step) {
             margin="normal"
             name="aadhaar"
           />
-          <h5>Upload Scanned Copy of Aadhaar (PDF)</h5>
-          <TextField
-          required
-            id="12Marksheet"
-            type="file"
-            inputProps={{
-              shrink: true
-            }}
-          />
-          <br/>
+          
           <br/>
           <h3>Contact Details</h3>
           <TextField
@@ -95,6 +89,7 @@ function getStepContent(step) {
             name="contact"
           />
           <TextField
+          required
             id="alternate-phone"
             label="Alternate Contact Number"
             variant="outlined"
@@ -105,6 +100,7 @@ function getStepContent(step) {
           />
           <h3>Personal Details</h3>
           <TextField
+          required
             id="dateofbirth"
             label="Date of Birth"
             type="date"
@@ -115,22 +111,23 @@ function getStepContent(step) {
           />
           <h3>Gender</h3>
           <label for="Male">Male</label>
-          <input type="radio" id="html" name="fav_language" value="HTML" />
+          <input type="radio" id="html" name="fav_language" value="HTML" required/>
           <label for="Female">Female</label>
-          <input type="radio" id="css" name="fav_language" value="CSS" />
+          <input type="radio" id="css" name="fav_language" value="CSS" required/>
           <label for="Female">Prefer not to say</label>
-          <input type="radio" id="css" name="fav_language" value="CSS" />
+          <input type="radio" id="css" name="fav_language" value="CSS" required/>
           <br />
           <br />
           <h3>Marital Status</h3>
           <label for="Male">Married</label>
-          <input type="radio" id="html" name="fav_language" value="HTML" />
+          <input type="radio" id="html" name="fav_language" value="HTML" required/>
           <label for="Female">Unmarried</label>
-          <input type="radio" id="css" name="fav_language" value="CSS" />
+          <input type="radio" id="css" name="fav_language" value="CSS" required/>
           <br />
           <br />
           <h3>Religion Details</h3>
           <TextField
+          required
             id="religion"
             label="Religion"
             variant="outlined"
@@ -140,6 +137,7 @@ function getStepContent(step) {
             name="religion"
           />
           <TextField
+          required
             id="caste"
             label="Caste"
             variant="outlined"
@@ -160,6 +158,7 @@ function getStepContent(step) {
             name="domicile"
           />
           <TextField
+          required
             id="authority"
             label="Issuing Authority"
             variant="outlined"
@@ -169,6 +168,7 @@ function getStepContent(step) {
             name="authority"
           />
           <TextField
+          required
             id="date"
             label="Date of Issue"
             variant="standard"
@@ -180,24 +180,24 @@ function getStepContent(step) {
           />
           <br />
           <br />
-          <h4>Upload Domicile Certificate</h4>
-          <TextField
-          required
-            id="upload"
-            type="file"
-            inputProps={{
-              shrink: true
-            }}
-          />
           
           <br />
-          <br />
+          <Button
+            variant="contained"
+          color="primary"
+          type="submit"
+          >
+            <SaveIcon   />Save
+          </Button>
+          <br/>
+          <br/>
         </>
       );
     case 1:
       return (
         <>
           <TextField
+          required
             id="country"
             label="Country"
             variant="outlined"
@@ -207,6 +207,7 @@ function getStepContent(step) {
             name="country"
           />
           <TextField
+          required
             id="state"
             label="State"
             variant="outlined"
@@ -216,6 +217,17 @@ function getStepContent(step) {
             name="country"
           />
           <TextField
+          required
+            id="city"
+            label="City"
+            variant="outlined"
+            placeholder="City"
+            fullWidth
+            margin="normal"
+            name="city"
+          />
+          <TextField
+          required
             id="address1"
             label="Address 1"
             variant="outlined"
@@ -225,6 +237,7 @@ function getStepContent(step) {
             name="address1"
           />
           <TextField
+          required
             id="address2"
             label="Address 2"
             variant="outlined"
@@ -234,6 +247,7 @@ function getStepContent(step) {
             name="address2"
           />
           <TextField
+          required
             id="number"
             label="PIN Code"
             variant="outlined"
@@ -242,6 +256,15 @@ function getStepContent(step) {
             margin="normal"
             name="pincode"
           />
+          <Button
+            variant="contained"
+          color="primary"
+          type="submit"
+          >
+            <SaveIcon   />Save
+          </Button>
+          <br/>
+          <br/>
         </>
       );
     case 2:
@@ -249,6 +272,7 @@ function getStepContent(step) {
         <>
         <h4>10th Board Details</h4>
           <TextField
+          required
             id="tenthBoard"
             label="Tenth Board"
             variant="outlined"
@@ -258,6 +282,7 @@ function getStepContent(step) {
             name="tenth"
           />
           <TextField
+          required
             id="tenthSchool"
             label="School Name"
             variant="outlined"
@@ -267,6 +292,7 @@ function getStepContent(step) {
             name="school"
           />
           <TextField
+          required
             id="tenthMerit"
             label="Merit status of tenth Board"
             variant="outlined"
@@ -275,16 +301,7 @@ function getStepContent(step) {
             margin="normal"
             name="tenthMerit"
           />
-          <h5>Upload your tenth marksheet</h5>
-          <TextField
-          required
-            id="tenthMarksheet"
-            type="file"
-            inputProps={{
-              shrink: true
-            }}
-          />
-          <br/>
+          
           <br/>
           {/* 12 details */}
           <h4>12th Board Details</h4>
@@ -318,18 +335,9 @@ function getStepContent(step) {
             margin="normal"
             name="12Merit"
           />
-          <h5>Upload your 12th Board marksheet</h5>
-          <TextField
-          required
-            id="12Marksheet"
-            type="file"
-            inputProps={{
-              shrink: true
-            }}
-          />
+          
           <br/>
-          <br/>
-          <h4>Undergraduation Details</h4>
+          <h4>Undergraduation/Diploma Details</h4>
           <TextField
           required
             id="undergrad"
@@ -360,19 +368,13 @@ function getStepContent(step) {
             margin="normal"
             name="branchName"
           />
-          <h5>Enter your College marksheet</h5>
-         <TextField
-          required
-            id="undergradMarksheet"
-            type="file"
-            inputProps={{
-              shrink: true
-            }}
-          />
-          <br/>
+          
           <br/>
           <h4>Higher Education Details</h4>
-          <TextField
+          <AddInput/>
+          <br/>
+          <br/>
+          {/* <TextField
             id="higherBoard"
             label="Board/University"
             variant="outlined"
@@ -380,21 +382,41 @@ function getStepContent(step) {
             fullWidth
             margin="normal"
             name="higher"
-          />
-        
+          /> */}
+          {/* <TextField
+          required
+            id="collegeName2"
+            label="College Name"
+            variant="outlined"
+            placeholder="Enter Your College Name"
+            fullWidth
+            margin="normal"
+            name="collegeName2"
+          /> */}
+          {/* <TextField
+          required
+            id="branch2"
+            label="Branch"
+            variant="outlined"
+            placeholder="Enter Your Branch Name"
+            fullWidth
+            margin="normal"
+            name="branchName2"
+          /> */}
+        <Button
+            variant="contained"
+          color="primary"
+          type="submit"
+          >
+            <SaveIcon   />Save
+          </Button>
+          <br/>
+          <br/>
         </>
       );
       case 3:
         return(<>
-        <TextField
-            id="collegeNo"
-            label="Number of College "
-            variant="outlined"
-            placeholder="Enter number of colleges worked with"
-            fullWidth
-            margin="normal"
-            name="collegeNo"
-          />
+       
         <TextField
             id="current"
             label="Institution working currently "
@@ -404,13 +426,76 @@ function getStepContent(step) {
             margin="normal"
             name="currentInst"
           /> 
-
+          <AddInput2/>
+        <Button
+            variant="contained"
+          color="primary"
+          type="submit"
+          >
+            <SaveIcon   />Save
+          </Button>
+          <br/>
+          <br/>
         </>);
         case 4:
           return(<>
+          <h5>Upload Scanned Copy of Aadhaar (PDF)</h5>
+          <TextField
+          required
+          name="aadhaarpdf"
+            id="12Marksheet"
+            type="file"
+            inputProps={{
+              shrink: true
+            }}
+          />
+          <br/>
+          <h4>Upload Nationality Proof Certificate(PDF)</h4>
+          <TextField
+          required
+            name="nationalitypdf"
+            id="upload"
+            type="file"
+            inputProps={{
+              shrink: true
+            }}
+          />
+          
+          <br />
+          <h5>Upload your tenth marksheet</h5>
+          <TextField
+          required
+            id="tenthMarksheet"
+            type="file"
+            inputProps={{
+              shrink: true
+            }}
+          />
+          <br/>
+          <h5>Upload your 12th Board marksheet</h5>
+          <TextField
+          required
+            id="12Marksheet"
+            type="file"
+            inputProps={{
+              shrink: true
+            }}
+          />
+          <br/>
+          <h5>Upload your Degree</h5>
+         <TextField
+          required
+            id="undergradMarksheet"
+            type="file"
+            inputProps={{
+              shrink: true
+            }}
+          />
+          <br/>
                 <h5>Upload Resume(PDF)</h5>
           <TextField
           required
+          name="resumepdf"
             id="Resume"
             type="file"
             inputProps={{
@@ -422,6 +507,7 @@ function getStepContent(step) {
           <h5>Upload Profile Picture(.png)</h5>
           <TextField
           required
+          name="profilepng"
             id="profile"
             type="file"
             inputProps={{
@@ -430,13 +516,22 @@ function getStepContent(step) {
           />
           <br/>
           <br/>
+          <Button
+            variant="contained"
+          color="primary"
+          type="submit"
+          >
+            <SaveIcon   />Save
+          </Button>
+           <br/>
+          <br/>
           </>)
     default:
       return "unknown step";
   }
 }
 
-const LinaerStepper = () => {
+const LinearStepper = () => {
   const classes = useStyles();
   const [activeStep, setActiveStep] = useState(0);
   const steps = getSteps();
@@ -493,4 +588,4 @@ const LinaerStepper = () => {
   );
 };
 
-export default LinaerStepper;
+export default LinearStepper;
