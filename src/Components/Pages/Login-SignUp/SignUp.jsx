@@ -24,8 +24,6 @@ function SignUp() {
         <Link className="LoginLink" to="/Login"> Sign Up</Link>
         </button>
       </div>
-      <br />
-      <Link to="/Login"> Already have an account? Sign in</Link>
     </div>
   );
 }
